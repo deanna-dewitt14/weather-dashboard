@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css" />
 	<title>Weather Dashboard</title>
 </head>
 <body>
@@ -11,23 +12,27 @@
 		Weather Dashboard
 	</header>
 	<aside>
-		Search for a City:
-		<input>Search Input</input>
-		<button>Search Button</button>
+		<span>Search for a City:</span>
+		<input></input>
+		<button>Search</button>
 		<div>
-		Search History
-		<button>History1</button>
-		<button>History2</button>
-		<button>History3</button>
-		<button>History4</button>
-		<button>History5</button>
+			<button>History1</button>
+			<button>History2</button>
+			<button>History3</button>
+			<button>History4</button>
+			<button>History5</button>
 		</div>
 	</aside>
-	<section>
-		Current Weather
+	<section class="currentWeather">
+		<span class="currentCity">Atlanta (3/30/2021) icon</span>
+		<span class="currentTemp">Temp: 74.01 F</span>
+		<span class="currentWind">Wind: 6.67 MPH</span>
+		<span class="currentHumidity">Humidity: 46%</span>
+		<span>UV Index: <span class="currentUVI">0.47</span></span>
+<!-- 		 I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index -->
 	</section>
-	<section>
-		5-Day Forcast:
+	<summary>5-Day Forcast:</summary>
+	<section class="forcast">
 		<div>
 			1.
 		</div>
