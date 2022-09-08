@@ -65,15 +65,21 @@ input {
     top: 6rem;
     left: 30%;
     width: 65%;
-	height: 35%;
 	flex-direction: column;
 	font-size: 1.5rem;
 	padding-left: 10px;
 }
 
-.currentCity {
+#currentCity {
 	font-weight: bold;
 	font-size: 2rem;
+}
+
+#currentUVI {
+    border-radius: 5px;
+    font-size: medium;
+    color: white;
+    padding: 5px 10px 5px 10px;
 }
 
 .currentWeather>span {
@@ -102,7 +108,7 @@ summary {
 }
 
 .forcast>div {
-	background-color: #203e4a;
+	background-color: lightslategray;
 	color: white;
 	width: 9rem;
 	height: 10rem;
@@ -113,4 +119,16 @@ summary {
 
 .forcast>div>span:first-child {
 	font-weight: bold;
+}
+
+#currentCity>img {
+	position: absolute;
+    top: 0;
+	width: 60px;
+	height: 60px;
+}
+
+.forcast img {
+	width: 40px;
+	height: 40px;;
 }

@@ -13,60 +13,60 @@
 	</header>
 	<aside>
 		<span>Search for a City:</span>
-		<input></input>
-		<button>Search</button>
+		<input id="searchInput"></input>
+		<button onclick="getWeather()" id="searchButton">Search</button>
 		<div>
-			<button>History1</button>
-			<button>History2</button>
-			<button>History3</button>
-			<button>History4</button>
-			<button>History5</button>
+			<button onclick="getWeatherFromHistory()" id="History1">Austin</button>
+			<button onclick="getWeatherFromHistory()" id="History2">Chicago</button>
+			<button onclick="getWeatherFromHistory()" id="History3">New York</button>
+			<button onclick="getWeatherFromHistory()" id="History4">Orlando</button>
+			<button onclick="getWeatherFromHistory()" id="History5">San Francisco</button>
 		</div>
 	</aside>
 	<section class="currentWeather">
-		<span class="currentCity">Atlanta (3/30/2021) icon</span>
-		<span class="currentTemp">Temp: 74.01 F</span>
-		<span class="currentWind">Wind: 6.67 MPH</span>
-		<span class="currentHumidity">Humidity: 46%</span>
-		<span>UV Index: <span class="currentUVI">0.47</span></span>
+		<span id="currentCity">Search for a City</span>
+		<span id="currentTemp">Temp: --.-- ℉</span>
+		<span id="currentWind">Wind: --.-- MPH</span>
+		<span id="currentHumidity">Humidity: --%</span>
+		<span>UV Index: <span id="currentUVI">-.--</span></span>
 <!-- 		 I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index -->
 	</section>
 	<summary>5-Day Forcast:</summary>
 	<section class="forcast">
 		<div>
-			<span class="dayOneDate">69dkfj</span>
-			<span class="dayOneIcon">69dkfj</span>
-			<span class="dayOneTemp">69dkfj</span>
-			<span class="dayOneWind">69dkfj</span>
-			<span class="dayOneHumidity">69dkfj</span>
+			<span id="dayOneDate">Day One</span>
+			<span id="dayOneIcon"></span>
+			<span id="dayOneTemp">Temp: --.-- ℉</span>
+			<span id="dayOneWind">Wind: --.-- MPH</span>
+			<span id="dayOneHumidity">Humidity: --%</span>
 		</div>
 		<div>
-			<span class="dayTwoDate">69dkfj</span>
-			<span class="dayTwoIcon">69dkfj</span>
-			<span class="dayTwoTemp">69dkfj</span>
-			<span class="dayTwoWind">69dkfj</span>
-			<span class="dayTwoHumidity">69dkfj</span>		
+			<span id="dayTwoDate">Day Two</span>
+			<span id="dayTwoIcon"></span>
+			<span id="dayTwoTemp">Temp: --.-- ℉</span>
+			<span id="dayTwoWind">Wind: --.-- MPH</span>
+			<span id="dayTwoHumidity">Humidity: --%</span>		
 		</div>
 		<div>
-			<span class="dayThreeDate">69dkfj</span>
-			<span class="dayThreeIcon">69dkfj</span>
-			<span class="dayThreeTemp">69dkfj</span>
-			<span class="dayThreeWind">69dkfj</span>
-			<span class="dayThreeHumidity">69dkfj</span>
+			<span id="dayThreeDate">Day Three</span>
+			<span id="dayThreeIcon"></span>
+			<span id="dayThreeTemp">Temp: --.-- ℉</span>
+			<span id="dayThreeWind">Wind: --.-- MPH</span>
+			<span id="dayThreeHumidity">Humidity: --%</span>
 		</div>
 		<div>
-			<span class="dayFourDate">69dkfj</span>
-			<span class="dayFourIcon">69dkfj</span>
-			<span class="dayFourTemp">69dkfj</span>
-			<span class="dayFourWind">69dkfj</span>
-			<span class="dayFourHumidity">69dkfj</span>	
+			<span id="dayFourDate">Day Four</span>
+			<span id="dayFourIcon"></span>
+			<span id="dayFourTemp">Temp: --.-- ℉</span>
+			<span id="dayFourWind">Wind: --.-- MPH</span>
+			<span id="dayFourHumidity">Humidity: --%</span>	
 		</div>
 		<div>
-			<span class="dayFiveDate">69dkfj</span>
-			<span class="dayFiveIcon">69dkfj</span>
-			<span class="dayFiveTemp">69dkfj</span>
-			<span class="dayFiveWind">69dkfj</span>
-			<span class="dayFiveHumidity">69dkfj</span>	
+			<span id="dayFiveDate">Day Five</span>
+			<span id="dayFiveIcon"></span>
+			<span id="dayFiveTemp">Temp: --.-- ℉</span>
+			<span id="dayFiveWind">Wind: --.-- MPH</span>
+			<span id="dayFiveHumidity">Humidity: --%</span>	
 		</div>
 	</section>
 	<script src="./script.js"></script>
