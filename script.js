@@ -82,7 +82,7 @@ function populateDisplay(data) {
 	//Day Two
 	var dayTwo = data.list[16];
 	dayTwoDate.innerHTML = dayTwo.dt_txt.substr(0,10);
-	dayTwoIcon.innerHTML = getWeatherIcon(dayOne.weather[0].icon);
+	dayTwoIcon.innerHTML = getWeatherIcon(dayTwo.weather[0].icon);
 	dayTwoTemp.innerHTML = "Temp: " + dayTwo.main.temp + " ℉";
 	dayTwoWind.innerHTML = "Wind: " + dayTwo.wind.speed + " MPH";
 	dayTwoHumidity.innerHTML = "Humidity: " + dayTwo.main.humidity;
@@ -90,7 +90,7 @@ function populateDisplay(data) {
 	//Day Three
 	var dayThree = data.list[24];
 	dayThreeDate.innerHTML = dayThree.dt_txt.substr(0,10);
-	dayThreeIcon.innerHTML = getWeatherIcon(dayOne.weather[0].icon);
+	dayThreeIcon.innerHTML = getWeatherIcon(dayThree.weather[0].icon);
 	dayThreeTemp.innerHTML = "Temp: " + dayThree.main.temp + " ℉";
 	dayThreeWind.innerHTML = "Wind: " + dayThree.wind.speed + " MPH";
 	dayThreeHumidity.innerHTML = "Humidity: " + dayThree.main.humidity;
@@ -98,7 +98,7 @@ function populateDisplay(data) {
 	//Day Four
 	var dayFour = data.list[32];
 	dayFourDate.innerHTML = dayFour.dt_txt.substr(0,10);
-	dayFourIcon.innerHTML = getWeatherIcon(dayOne.weather[0].icon);
+	dayFourIcon.innerHTML = getWeatherIcon(dayFour.weather[0].icon);
 	dayFourTemp.innerHTML = "Temp: " + dayFour.main.temp + " ℉";
 	dayFourWind.innerHTML = "Wind: " + dayFour.wind.speed + " MPH";
 	dayFourHumidity.innerHTML = "Humidity: " + dayFour.main.humidity;
@@ -106,7 +106,7 @@ function populateDisplay(data) {
 	//Day Five
 	var dayFive = data.list[39];
 	dayFiveDate.innerHTML = dayFive.dt_txt.substr(0,10);
-	dayFiveIcon.innerHTML = getWeatherIcon(dayOne.weather[0].icon);
+	dayFiveIcon.innerHTML = getWeatherIcon(dayFive.weather[0].icon);
 	dayFiveTemp.innerHTML = "Temp: " + dayFive.main.temp + " ℉";
 	dayFiveWind.innerHTML = "Wind: " + dayFive.wind.speed + " MPH";
 	dayFiveHumidity.innerHTML = "Humidity: " + dayFive.main.humidity;
@@ -129,6 +129,7 @@ function populateUVI(HTMLelement,UVI) {
 		}
 }
 
+//Grabs the Weather Icon and returns it as an HTML image tag string
 function getWeatherIcon(iconCode) {
 	var url = 'https://openweathermap.org/img/wn/' + iconCode + '@2x.png';
 	return '<img src="' + url + '" alt="Weather Icon">'
