@@ -134,3 +134,9 @@ function getWeatherIcon(iconCode) {
 	var url = 'https://openweathermap.org/img/wn/' + iconCode + '@2x.png';
 	return '<img src="' + url + '" alt="Weather Icon">'
 }
+
+//TODO: ADD FUNCTION FOR STORING HISTORY OF CITYS CALLED
+
+//TODO: ADD FUNCTION FOR RETRIEVING CITY STRING FROM LOCAL STORAGE ARRAY
+// CITIES WOULD BE ADDED TO THE STACK AS THEY ARE CALLED AND AFTER 5, WOULD BE REPLACED IN A FIFO METHOD
+// A LOCAL STORAGE ARRAY WOULD CONTAIN THE INDEX LOCATION OF THE 'HISTORY CITY' AND THE VALUE WOULD BE THE STRING NAME EX: {0: "Austin", 1:"Chicago", 2:"New York", 3:"Orlando", 4:"San Francisco"}
